@@ -345,7 +345,8 @@ exclude = ["docs/source/notebooks/*.ipynb"]  # Too many issue with 'PlotOutput's
 required-version = ">=0.5.26"  # See: https://github.com/astral-sh/uv/pull/11075
 
 [tool.uv.sources]
-differt = { workspace = true }
+# differt = { workspace = true }
 
 [tool.uv.workspace]
 members = ["differt", "differt-core"]
+exclude = ["differt-core"]  # Add this line
